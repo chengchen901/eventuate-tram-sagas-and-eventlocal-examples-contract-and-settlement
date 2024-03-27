@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.shdatalink.contract.mapper.ContractMapper;
 import com.shdatalink.contract.model.Contract;
-import com.shdatalink.contract.model.ContractState;
+import com.shdatalink.contractandsettlement.common.settlement.messaging.model.ContractState;
 import com.shdatalink.contract.service.ContractService;
 import org.springframework.stereotype.Service;
 

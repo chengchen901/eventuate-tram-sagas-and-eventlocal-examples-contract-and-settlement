@@ -40,6 +40,7 @@ public class CreateContractSaga implements SimpleSaga<CreateContractSagaData> {
         log.info("CreateContractSaga 执行 create, data: {}", data);
         Contract contract = contractService.create(data.getAmount());
         data.setContractId(contract.getId());
+        data.setState(contract.getState());
     }
 
     private void reject(CreateContractSagaData data) {
